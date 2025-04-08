@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(219, 230, 253);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.4rem;
+}
+
+p {
+  margin: 2rem 0;
+  color: rgba(21, 19, 60, 0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.stories-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping to create rows */
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.card {
+  flex-basis: 22%; /* Default to about 4 cards per row on large screens */
+  min-width: 20rem;
+  padding: 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  color: #15133c;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 38rem; /* Set fixed height for equal-sized cards */
+}
+
+.card-button {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button a {
+  color: #92b4ec;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.card-button a:last-child {
+  color: red;
+}
+
+form {
+  display: grid;
+  place-items: center;
+}
+
+input {
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+}
+
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #15133c;
+  color: #ffffff;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  html {
+    font-size: 56%;
+  }
+
+  .card {
+    flex-basis: 45%; /* 2 cards per row on tablets */
+    min-width: 35rem;
+    padding: 2.5rem;
+    height: 36rem; /* Maintain equal height on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 51%;
+  }
+
+  .card {
+    flex-basis: 90%; /* 1 card per row on mobile */
+    min-width: 35rem;
+    padding: 2rem;
+    height: auto; /* Let it grow based on content for narrow screens */
+  }
+}
+/* login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 30rem;
+}
+
+.login-container button {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  background-color: #15133c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  font-size: 2.8rem;
+  color: #15133c;
+  margin: 0;
+}
+
+.logout-btn {
+  font-size: 1.6rem;
+  padding: 0.8rem 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
